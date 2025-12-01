@@ -54,10 +54,11 @@ document.addEventListener("DOMContentLoaded", () => {
 const nextButton= document.querySelector('.next-btn');
 const video= document.querySelector('.hero-vid video');
 
-const vidList=['assets/video-1.mp4',
-               'assets/video-2.mp4',
-               'assets/video-3.mp4',
-               'assets/video-4.mp4'];
+const vidList=["https://github.com/anasahhm/Cafe-Lumiere/releases/download/v1.0.0/video-1.mp4",
+  "https://github.com/anasahhm/Cafe-Lumiere/releases/download/v1.0.0/video-2.mp4",
+  "https://github.com/anasahhm/Cafe-Lumiere/releases/download/v1.0.0/video-3.mp4",
+  "https://github.com/anasahhm/Cafe-Lumiere/releases/download/v1.0.0/video-4.mp4"
+              ];
 
 let index=0;
 nextButton.addEventListener('click',function(){
