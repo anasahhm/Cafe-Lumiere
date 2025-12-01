@@ -51,10 +51,10 @@ document.addEventListener("DOMContentLoaded", () => {
   io.observe(testimonial);
 });
 
-const nextButton = document.querySelector('.next-btn');
-const video = document.querySelector('.hero-vid');
+const nextButton= document.querySelector('.next-btn');
+const video= document.querySelector('.hero-vid video');
 
-const vidList = [
+const vidList= [
   "https://res.cloudinary.com/dzxhi1dxk/video/upload/v1764602390/video-1_fxx8ao.mp4",
   "https://res.cloudinary.com/dzxhi1dxk/video/upload/v1764602386/video-2_a0krw3.mp4",
   "https://res.cloudinary.com/dzxhi1dxk/video/upload/v1764602385/video-3_j8jrrg.mp4",
