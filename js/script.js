@@ -64,6 +64,6 @@ let index=0;
 nextButton.addEventListener('click',function(){
     index++;
     if (index >= vidList.length) index = 0;
-    video.src = vidList[index];
+    video.src = vidList[index] + "?v=" + Date.now();;
     video.play();
 })
