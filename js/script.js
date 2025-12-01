@@ -52,13 +52,13 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 const nextButton = document.querySelector('.next-btn');
-const video = document.querySelector('.hero-vid video');
+const video = document.querySelector('.hero-vid');
 
 const vidList = [
-  "https://res.cloudinary.com/dzxhi1dxk/video/upload/q_auto,f_auto,vc_auto,br_auto/video-1_fxx8ao.mp4",
-  "https://res.cloudinary.com/dzxhi1dxk/video/upload/q_auto,f_auto,vc_auto,br_auto/video-2_a0krw3.mp4",
-  "https://res.cloudinary.com/dzxhi1dxk/video/upload/q_auto,f_auto,vc_auto,br_auto/video-3_j8jrrg.mp4",
-  "https://res.cloudinary.com/dzxhi1dxk/video/upload/q_auto,f_auto,vc_auto,br_auto/video-4_fmqblc.mp4"
+  "https://res.cloudinary.com/dzxhi1dxk/video/upload/v1764602390/video-1_fxx8ao.mp4",
+  "https://res.cloudinary.com/dzxhi1dxk/video/upload/v1764602386/video-2_a0krw3.mp4",
+  "https://res.cloudinary.com/dzxhi1dxk/video/upload/v1764602385/video-3_j8jrrg.mp4",
+  "https://res.cloudinary.com/dzxhi1dxk/video/upload/v1764602386/video-4_fmqblc.mp4"
 ];
 
 let index = 0;
@@ -69,3 +69,4 @@ nextButton.addEventListener("click", () => {
   video.load();
   video.play();
 });
+
