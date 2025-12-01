@@ -51,19 +51,21 @@ document.addEventListener("DOMContentLoaded", () => {
   io.observe(testimonial);
 });
 
-const nextButton= document.querySelector('.next-btn');
-const video= document.querySelector('.hero-vid video');
+const nextButton = document.querySelector('.next-btn');
+const video = document.querySelector('.hero-vid video');
 
-const vidList=["https://github.com/anasahhm/Cafe-Lumiere/releases/download/v1.0.0/video-1.mp4",
-  "https://github.com/anasahhm/Cafe-Lumiere/releases/download/v1.0.0/video-2.mp4",
-  "https://github.com/anasahhm/Cafe-Lumiere/releases/download/v1.0.0/video-3.mp4",
-  "https://github.com/anasahhm/Cafe-Lumiere/releases/download/v1.0.0/video-4.mp4"
-              ];
+const vidList = [
+  "https://res.cloudinary.com/dzxhi1dxk/video/upload/q_auto,f_auto,vc_auto,br_auto/video-1_fxx8ao.mp4",
+  "https://res.cloudinary.com/dzxhi1dxk/video/upload/q_auto,f_auto,vc_auto,br_auto/video-2_a0krw3.mp4",
+  "https://res.cloudinary.com/dzxhi1dxk/video/upload/q_auto,f_auto,vc_auto,br_auto/video-3_j8jrrg.mp4",
+  "https://res.cloudinary.com/dzxhi1dxk/video/upload/q_auto,f_auto,vc_auto,br_auto/video-4_fmqblc.mp4"
+];
 
-let index=0;
-nextButton.addEventListener('click',function(){
-    index++;
-    if (index >= vidList.length) index = 0;
-    video.src = vidList[index];
-    video.play();
-})
+let index = 0;
+
+nextButton.addEventListener("click", () => {
+  index = (index + 1) % vidList.length;
+  video.src = vidList[index];
+  video.load();
+  video.play();
+});
