@@ -1,0 +1,95 @@
+.subscription{
+    padding: 64px;
+    background-color: var(--primary-color);
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Hidden hover image layer */
+.subscription::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("../../assets/subscribe_bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    opacity: 0;
+    
+    transition: opacity 1s ease-in-out; 
+    z-index: 0;
+}
+
+/* On hover → show image */
+.subscription:hover::before {
+    opacity: 0.25;      /* adjust intensity */
+    transform: scale(1);
+}
+
+/* Bring text above overlay */
+.subscription * {
+    position: relative;
+    z-index: 1;
+}
+.subscription h2{
+    font-size: 90px;
+    font-family: var(--playfair-display);
+    font-weight: 700;
+    line-height: 133px;
+    color: whitesmoke;
+    text-align: center;
+}
+.subscription p{
+    font-size: 19px;
+    font-family: var(--plus-jakarta-sans);
+    font-weight: 300;
+    line-height: 35px;
+    margin-top: 32px;
+    color: rgba(245, 245, 245, 0.801);
+}
+.subscription__form{
+    min-width: 480px;
+    margin-top: 40px;
+    padding: 15px 15px 15px 25px;
+    display: flex;
+    gap: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 45px;
+}
+.subscription__form input{
+    flex: 1;
+    font-size: 15px;
+    font-family: 400px;
+    font-family: var(--plus-jakarta-sans);
+    color:whitesmoke;
+    opacity: 0.5;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.subscription__form input::placeholder{
+    color: whitesmoke;
+    opacity: 0.5;
+}
+.subscription__form button{
+    padding: 20px;
+    min-width: 180px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--plus-jakarta-sans);
+    color: whitesmoke;
+    text-align: center;
+    background: var(--black-400);
+    border-radius: 45px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.subscription__form button:hover{
+    background: var(--secondary-color);
+}

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café Lumière</title>
+  <link rel="icon" type="image/png" href="/sushi.png">
+  <link rel="stylesheet" href="css/style.css">
+  
+</head>
+<body>
+  <header>
+    <nav class="header__nav">
+      <div class="header__logo">
+        <h3 data-aos="fade-down">CAFÉ LUMIÈRE</h3>
+        <div class="header__logo-overlay"></div>
+      </div>
+      <ul class="header__menu" data-aos="fade-down">
+        
+        <li><a href="#about-us">OUR STORY</a></li>
+        <li><a href="#menu">MENU</a></li>
+        <li><a href="#food">FLAVORS</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        
+        <li><img src="assets/search.svg" alt="search"></li>
+      <ul class="header__menu-mobile" data-aos="fade-down">
+        <img src="assets/menu.svg" alt="menu">
+      </ul>
+      </ul>
+      
+    </nav>
+  </header>
+  <section class="hero" id="hero">
+   <div class="hero-image">
+    
+    <img src="assets/sushi-1.png" alt="ss" data-aos="fade-up"/>
+    <h3 data-aos="fade-up"> BONJOUR</h3>
+        <div class="hero-image__overlay">
+     </div>
+   </div>
+   <div class="hero-content">
+    <div class="hero-content-info" data-aos="fade-left">
+      <h1>Sweet Escape to French Flavors</h1>
+         <p>Enjoy the charm, the aromas, and a sprinkle of French magic.</p> 
+          <div class="hero-content__buttons">
+            <button class="hero-content__order-button">
+              Order Now
+            </button>
+            <button class="hero-content__play-button">
+              <img src="assets/play-circle.svg" alt="play">
+             Order Guide</button>
+          </div>
+    </div>
+    <div class="hero-content__testimonial" data-aos="fade-up">
+      <div class="hero-content__customer flex-center">
+        <h4 id="customerCount">0<span>k+</span></h4>
+        <p>Happy Customers</p>
+      </div>
+      <div class="hero-content__review">
+        <img src="assets/user.png" alt="">
+        <p>“Pure Perfection in Every Bite.”</p>
+      </div>
+    </div>
+   </div>
+  </section>
+
+  <section class ="hero-scroll" >
+    <div class="hero-vid autoTakeFull">
+      <video loop autoplay muted plays-inline >
+                <source src="assets/video-1.mp4" type="video/mp4">
+       </video>
+       <div class="next-btn">NEXT</div>
+    </div>
+   </section>
+
+
+  <section class="about-us" id="about-us">
+     <div class="about-us__image">
+      <div class="about-us__image-sushi3">
+        <img src="assets/sushi-3.png" data-aos="fade-right">
+      </div>
+      <button class="about-us__button">
+       Take a Look
+        <img src="assets/arrow-up-right.svg" >
+      </button>
+      <div class="about-us__image-sushi2">
+        <img src="assets/sushi-2.png" data-aos="fade-right">
+      </div>
+
+     </div>
+     <div class="about-us__content" data-aos="fade-left">
+      <p class="sushi__subtitle">About Us / À Propos</p>
+      <h3 class="sushi__title">Our mission is to let you experience the essence of French cuisine.</h3>
+      <p class="sushi__description">We delight in sharing the warmth of French café culture, one delicious bite and cozy moment at a time.</p>
+  </section>
+
+  <section class="popular-foods" id="menu">
+    <h2 class="popular-foods__title" data-aos="flip-up">Saveurs Signature / Popular Dishes</h2>
+    <div class="popular-foods__filters sushi__hide-scrollbar" data-aos="fade-up">
+      <button class="popular-foods__filter-btn active">ALL</button>
+      <button class="popular-foods__filter-btn"><img src="assets/sushi-9.png"/>Macarons</button>
+      <button class="popular-foods__filter-btn"><img src="assets/sushi-8.png"/>Soupe</button>
+      <button class="popular-foods__filter-btn"><img src="assets/sushi-7.png"/>Oeufs en meurette</button>
+      <button class="popular-foods__filter-btn"><img src="assets/sushi-6.png"/>Éclairs</button>
+      <button class="popular-foods__filter-btn">Others</button>
+    </div>
+     <div class="popular-foods__catalogue" data-aos="fade-up">
+      
+      <article class="popular-foods__card">
+        <img src="assets/sushi-12.png" class="popular-foods__card-image">
+        <h4 class="popular-foods__card-title">Pain au chocolat</h4>
+        <div class="popular-foods__card-details flex-between">
+          <div class="popular-foods__card-rating">
+            <img src="assets/star.svg">
+            <p>4.7</p>
+          </div>
+          <p class="popular-foods__card-price">€2.00</p>
+        </div>
+      </article>
+
+       <article class="popular-foods__card active-card">
+        <img src="assets/sushi-11.png" class="popular-foods__card-image">
+        <h4 class="popular-foods__card-title">Croissant</h4>
+        <div class="popular-foods__card-details flex-between">
+          <div class="popular-foods__card-rating">
+            <img src="assets/star.svg">
+            <p>5.0</p>
+          </div>
+          <p class="popular-foods__card-price">€1.20</p>
+        </div>
+      </article>
+
+       <article class="popular-foods__card">
+        <img src="assets/sushi-10.png" class="popular-foods__card-image">
+        <h4 class="popular-foods__card-title">Soupe à l'oignon</h4>
+        <div class="popular-foods__card-details flex-between">
+          <div class="popular-foods__card-rating">
+            <img src="assets/star.svg">
+            <p>4.9</p>
+          </div>
+          <p class="popular-foods__card-price">€6.90</p>
+        </div>
+      </article>
+     </div>
+     <button class="popular-foods__button">See What's Cooking<img src="assets/arrow-right.svg" /></button>
+  </section>
+
+  <section class="trending" id="food">
+    <section class="trending-sushi">
+       <div class="trending__content" data-aos="fade-right">
+      <p class="sushi__subtitle">Current Cravings / Sélections</p>
+      <h3 class="sushi__title">Essence of France</h3>
+      <p class="sushi__description">Where Flavor Meets the Heart of France</p>
+      <ul class="trending__list flex-between">
+        <li>
+          <div class="trending__icon flex-center">
+            <img src="assets/check.svg" />
+          </div>
+          <p>Croque Monsieur</p>
+        </li>
+         <li>
+          <div class="trending__icon flex-center">
+            <img src="assets/check.svg" />
+          </div>
+          <p>Quiche Lorraine</p>
+        </li>
+         <li>
+          <div class="trending__icon flex-center">
+            <img src="assets/check.svg" />
+          </div>
+          <p>Ratatouille</p>
+        </li>
+         <li>
+          <div class="trending__icon flex-center">
+            <img src="assets/check.svg" />
+          </div>
+          <p>Crêpes</p>
+        </li>
+         <li>
+          <div class="trending__icon flex-center">
+            <img src="assets/check.svg" />
+          </div>
+          <p>Soupe à l’Oignon</p>
+        </li>
+         <li>
+          <div class="trending__icon flex-center">
+            <img src="assets/check.svg" />
+          </div>
+          <p>Tartiflette</p>
+        </li>
+      </ul>
+    </div>
+    <div class="trending__image flex-center">
+      <img class ="one" src="assets/sushi-5.png" data-aos="fade-left"/>
+      <div class="trending__arrow trending__arrow-left">
+        <img src="assets/arrow-vertical.svg" >
+      </div>
+       <div class="trending__arrow trending__arrow-bottom">
+        <img src="assets/arrow-horizontal.svg" >
+      </div>
+    </div>
+
+
+    </section>
+   <div class="trending__dicover" data-aos="zoom-in">
+    <p>Explore</p>
+  </div>
+    <section class="trending-drink">
+       <div class="trending__image flex-center">
+      <img src="assets/sushi-4.png" data-aos="fade-right"/>
+      <div class="trending__arrow trending__arrow-top">
+        <img src="assets/arrow-horizontal.svg" >
+      </div>
+       <div class="trending__arrow trending__arrow-right">
+        <img src="assets/arrow-vertical.svg" >
+      </div>
+    </div>
+       <div class="trending__content" data-aos="fade-left">
+      <p class="sushi__subtitle">What's Pouring / À la Mode</p>
+      <h3 class="sushi__title">French Elixirs</h3>
+      <p class="sushi__description">Savor the True Spirit of French Beverages</p>
+      <ul class="trending__list flex-between">
+        <li>
+          <div class="trending__icon flex-center">
+            <img src="assets/check.svg" />
+          </div>
+          <p>Café au Lait</p>
+        </li>
+         <li>
+          <div class="trending__icon flex-center">
+            <img src="assets/check.svg" />
+          </div>
+          <p>Chocolat Chaud</p>
+        </li>
+         <li>
+          <div class="trending__icon flex-center">
+            <img src="assets/check.svg" />
+          </div>
+          <p>Thé Earl Grey</p>
+        </li>
+         <li>
+          <div class="trending__icon flex-center">
+            <img src="assets/check.svg" />
+          </div>
+          <p>Vin Rouge</p>
+        </li>
+         <li>
+          <div class="trending__icon flex-center">
+            <img src="assets/check.svg" />
+          </div>
+          <p>Citron Pressé</p>
+        </li>
+         <li>
+          <div class="trending__icon flex-center">
+            <img src="assets/check.svg" />
+          </div>
+          <p>Côtes du Rhône</p>
+        </li>
+      </ul>
+    </div>
+       </section>
+  </section>
+
+  <section class="subscription flex-center" id="services">
+    <h2 data-aos="flip-down">Stay in the Loop <br>
+    with Our Latest Offers</h2>
+    <p data-aos="fade-up">Stay Connected with <strong>Café Lumière</strong></p>
+    <div class="subscription__form" data-aos="fade-up">
+      <input type="text" placeholder="Enter your email address"/>
+      <button>Join In</button>
+    </div>
+  </section>
+  
+  <footer class="footer flex-between">
+    <h3 class="footer_logo"><a href="#hero"><span>CAFÉ </span>LUMIÈRE</a>
+      
+    </h3>
+    <ul class="footer__nav">
+              <li><a href="#about-us">OUR STORY</a></li>
+              <li><a href="#menu">MENU</a></li>
+              <li><a href="#food">FLAVORS</a></li>
+              <li><a href="#services">SERVICES</a></li>
+    </ul>
+    <ul class="footer_social">
+      <li class="flex-center">
+        <img src="assets/facebook.svg">
+      </li>
+       <li class="flex-center">
+        <img src="assets/instagram.svg">
+      </li>
+       <li class="flex-center">
+        <img src="assets/twitter.svg">
+      </li>
+    </ul>
+  </footer>
+  
+ <script src="js/script.js" type="module"></script>
+</body>
+</html> 
