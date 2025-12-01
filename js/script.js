@@ -61,12 +61,11 @@ const vidList = [
   "https://res.cloudinary.com/dzxhi1dxk/video/upload/v1764602386/video-4_fmqblc.mp4"
 ];
 
-let index = 0;
-
-nextButton.addEventListener("click", () => {
-  index = (index + 1) % vidList.length;
-  video.src = vidList[index];
-  video.load();
-  video.play();
-});
+let index=0;
+nextButton.addEventListener('click',function(){
+    index++;
+    if (index >= vidList.length) index = 0;
+    video.src = vidList[index];
+    video.play();
+})
 
