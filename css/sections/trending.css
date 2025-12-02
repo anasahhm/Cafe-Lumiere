@@ -106,14 +106,6 @@
   background-size: contain;
   background-position: center;
 }
-
-.trending-sushi .trending__image {
-  background-image: url("../../assets/japanese_sushi.png");
-}
-
-.trending-drink .trending__image {
-  background-image: url("../../assets/japanese_drinks.png");
-}
 .trending__image .one {
   width: 350px;
   height: 450px;
